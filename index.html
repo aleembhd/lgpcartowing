@@ -3322,9 +3322,59 @@
             filter: brightness(0) saturate(100%);
         }
         
+        /* Navbar call button styling - permanent hover color */
+        .elementor-element-fa327e4 .elementor-button {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        .elementor-element-fa327e4 .elementor-button:hover {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+            transform: none !important;
+        }
+        
         .elementor-element-4d9bd75c .elementor-icon-box-content {
             flex: 1 !important;
             text-align: left !important;
+        }
+        
+        /* Call icon styling - white background only */
+        .elementor-element-4d9bd75c .elementor-icon-box-icon a {
+            background: white !important;
+        }
+        
+        /* Book Now button - permanent hover color */
+        .elementor-element-5815c9b4 .elementor-button {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        .elementor-element-5815c9b4 .elementor-button:hover {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        /* Call us now button - permanent hover color */
+        .elementor-element-7da8fad6 .elementor-button {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        .elementor-element-7da8fad6 .elementor-button:hover {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        /* Flip card Call Now buttons - permanent hover color */
+        .elementor-flip-box__button.elementor-button {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
+        }
+        
+        .elementor-flip-box__button.elementor-button:hover {
+            background-color: var(--ast-global-color-1) !important;
+            border-color: var(--ast-global-color-1) !important;
         }
         
         /* Mobile responsive adjustments */
@@ -3377,6 +3427,46 @@
             justify-content: center !important;
             width: 48px !important;
             height: 48px !important;
+        }
+        
+        /* Animated border for booking form */
+        .elementor-element-3a9a4c3d {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .elementor-element-3a9a4c3d::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FF6B35, transparent);
+            animation: snake-border-top 3s linear infinite;
+            z-index: 10;
+        }
+        
+        .elementor-element-3a9a4c3d::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FF6B35, transparent);
+            animation: snake-border-bottom 3s linear infinite;
+            z-index: 10;
+        }
+        
+        @keyframes snake-border-top {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        @keyframes snake-border-bottom {
+            0% { right: -100%; }
+            100% { right: 100%; }
         }
         
         .elementor-element-7dc3dd75 .elementor-icon-box-content,
@@ -4436,12 +4526,12 @@ flexibility(document.documentElement);
                                                     </div>
                                                     <div class="elementor-element elementor-element-71e40a77 elementor-widget elementor-widget-heading" data-id="71e40a77" data-element_type="widget" data-widget_type="heading.default">
                                                         <div class="elementor-widget-container">
-                                                            <h2 class="elementor-heading-title elementor-size-default">Best Towing Services in Pata Singaram</h2>
+                                                            <h2 class="elementor-heading-title elementor-size-default">Best Towing Services in Bata Singaram</h2>
                                                         </div>
                                                     </div>
                                                     <div class="elementor-element elementor-element-4709b7e elementor-widget elementor-widget-text-editor" data-id="4709b7e" data-element_type="widget" data-widget_type="text-editor.default">
                                                         <div class="elementor-widget-container">
-                                                            <p>At <strong data-start="361" data-end="387">LGP Towing Services</strong>, we offer the <strong data-start="402" data-end="442">best car towing services in Pata Singaram</strong> with quick response,
+                                                            <p>At <strong data-start="361" data-end="387">LGP Towing Services</strong>, we offer the <strong data-start="402" data-end="442">best car towing services in Bata Singaram</strong> with quick response,
                                                                 trained staff, and round-the-clock support. Whether your car breaks down or needs transport, our <strong data-start="561" data-end="596">car towing service in Hyderabad</strong> is ready
                                                                 anytime.</p>
                                                             <ul>
@@ -4628,7 +4718,7 @@ flexibility(document.documentElement);
                                                                     </div>
                                                                     <div class="elementor-element elementor-element-5f4b43df elementor-widget elementor-widget-heading" data-id="5f4b43df" data-element_type="widget" data-widget_type="heading.default">
                                                                         <div class="elementor-widget-container">
-                                                                            <h2 class="elementor-heading-title elementor-size-default">Best Towing Services in Pata Singaram
+                                                                            <h2 class="elementor-heading-title elementor-size-default">Best Towing Services in Bata Singaram
                                                                             </h2>
                                                                         </div>
                                                                     </div>
@@ -4659,7 +4749,7 @@ flexibility(document.documentElement);
                                                                                                 Emergency Car Towing </h3>
 
                                                                                             <div class="elementor-flip-box__layer__description">
-                                                                                                We provide quick and reliable emergency towing 24/7 across Pata Singaram. Whether it's a highway breakdown or a sudden issue in the city, our team is always ready to respond. </div>
+                                                                                                We provide quick and reliable emergency towing 24/7 across Bata Singaram. Whether it's a highway breakdown or a sudden issue in the city, our team is always ready to respond. </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -4670,7 +4760,7 @@ flexibility(document.documentElement);
                                                                                                 Emergency Car Towing </h3>
 
                                                                                             <div class="elementor-flip-box__layer__description">
-                                                                                                Facing a car breakdown? We offer fast and affordable Car Towing Services anywhere in Pata Singaram. Call us anytime – day or night – we'll tow you safely. </div>
+                                                                                                Facing a car breakdown? We offer fast and affordable Car Towing Services anywhere in Bata Singaram. Call us anytime – day or night – we'll tow you safely. </div>
 
                                                                                             <a class="elementor-flip-box__button elementor-button elementor-size-md" href="tel:+919553456247">
 							Call Now						</a>
@@ -4786,7 +4876,7 @@ flexibility(document.documentElement);
                                                                                                 Off-Road Stuck Vehicle Recovery </h3>
 
                                                                                             <div class="elementor-flip-box__layer__description">
-                                                                                                Our Pata Singaram Car Towing Service includes tough recovery operations using winch-outs and trained professionals. No damage, no delay. </div>
+                                                                                                Our Bata Singaram Car Towing Service includes tough recovery operations using winch-outs and trained professionals. No damage, no delay. </div>
 
                                                                                             <a class="elementor-flip-box__button elementor-button elementor-size-md" href="tel:+919553456247">
 							Call Now						</a>
@@ -4823,7 +4913,7 @@ flexibility(document.documentElement);
                                                                                                 Car Breakdown Assistance </h3>
 
                                                                                             <div class="elementor-flip-box__layer__description">
-                                                                                                We are known for Best Car Breakdown Service in Pata Singaram. Whether it's battery failure or an engine issue, we're just one call away. </div>
+                                                                                                We are known for Best Car Breakdown Service in Bata Singaram. Whether it's battery failure or an engine issue, we're just one call away. </div>
 
                                                                                             <a class="elementor-flip-box__button elementor-button elementor-size-md" href="tel:+919553456247">
 							Call Now						</a>
@@ -4859,7 +4949,7 @@ flexibility(document.documentElement);
                                                                                                 No Parking Zone & Dirty Vehicle </h3>
 
                                                                                             <div class="elementor-flip-box__layer__description">
-                                                                                                We tow vehicles parked in no-parking areas, and also help clear dirty or unused cars from basements, buildings, or open plots. Trusted Pata Singaram Car Towing Service for all messy vehicle situations. </div>
+                                                                                                We tow vehicles parked in no-parking areas, and also help clear dirty or unused cars from basements, buildings, or open plots. Trusted Bata Singaram Car Towing Service for all messy vehicle situations. </div>
 
                                                                                             <a class="elementor-flip-box__button elementor-button elementor-size-md" href="tel:+919553456247">
 							Call Now						</a>
@@ -4898,7 +4988,7 @@ flexibility(document.documentElement);
                                                                     </div>
                                                                     <div class="elementor-element elementor-element-5b6f6b9f elementor-widget elementor-widget-text-editor" data-id="5b6f6b9f" data-element_type="widget" data-widget_type="text-editor.default">
                                                                         <div class="elementor-widget-container">
-                                                                            <p>LGP Towing Services is here to help with the <strong data-start="334" data-end="370">Best Towing Services in Pata Singaram</strong> and nearby areas. Reach out anytime, and we'll
+                                                                            <p>LGP Towing Services is here to help with the <strong data-start="334" data-end="370">Best Towing Services in Bata Singaram</strong> and nearby areas. Reach out anytime, and we'll
                                                                                 be there in minutes.</p>
                                                                             <p> </p>
                                                                         </div>
