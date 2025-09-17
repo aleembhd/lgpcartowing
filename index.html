@@ -3309,6 +3309,19 @@
             margin-right: 15px !important;
         }
         
+        /* Style the call icon with white background and black border */
+        .elementor-element-4d9bd75c .elementor-icon-box-icon a {
+            display: inline-block;
+            background: white;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 8px;
+        }
+        
+        .elementor-element-4d9bd75c .elementor-icon-box-icon a img {
+            filter: brightness(0) saturate(100%);
+        }
+        
         .elementor-element-4d9bd75c .elementor-icon-box-content {
             flex: 1 !important;
             text-align: left !important;
@@ -3350,6 +3363,20 @@
         .elementor-element-1964155f .elementor-icon-box-icon {
             flex-shrink: 0 !important;
             margin-right: 15px !important;
+        }
+        
+        /* Style 24/7 service icons with red background and white phone icon */
+        .elementor-element-7dc3dd75 .elementor-icon-box-icon .elementor-icon,
+        .elementor-element-1964155f .elementor-icon-box-icon .elementor-icon {
+            background: #dc3545 !important;
+            color: white !important;
+            border-radius: 8px !important;
+            padding: 12px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 48px !important;
+            height: 48px !important;
         }
         
         .elementor-element-7dc3dd75 .elementor-icon-box-content,
@@ -4313,7 +4340,7 @@ flexibility(document.documentElement);
 
                                                                                 <div class="elementor-icon-box-icon">
                                                                                     <a href="tel:+919553456247" class="elementor-icon" tabindex="-1" aria-label="24/7 Emergency Towing">
-			<img src="logos/callicon.jpg" alt="Call Icon" style="width: 32px; height: 32px;"/>			</a>
+			<img src="logos/phone-icon.svg" alt="Phone Icon" style="width: 32px; height: 32px;"/>			</a>
                                                                                 </div>
 
                                                                                 <div class="elementor-icon-box-content">
@@ -4359,7 +4386,7 @@ flexibility(document.documentElement);
 
                                                                 <div class="elementor-icon-box-icon">
                                                                     <span class="elementor-icon">
-			<i aria-hidden="true" class="material-icons md-support_agent" data-md-icon="support_agent"></i>			</span>
+			<img src="logos/phone-icon.svg" alt="Phone Icon" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"/>			</span>
                                                                 </div>
 
                                                                 <div class="elementor-icon-box-content">
@@ -4382,7 +4409,7 @@ flexibility(document.documentElement);
 
                                                                 <div class="elementor-icon-box-icon">
                                                                     <span class="elementor-icon">
-							</span>
+			<img src="logos/phone-icon.svg" alt="Phone Icon" style="width: 24px; height: 24px; filter: brightness(0) invert(1);"/>			</span>
                                                                 </div>
 
                                                                 <div class="elementor-icon-box-content">
@@ -6284,45 +6311,63 @@ flexibility(document.documentElement);
             /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
         }, !1);
     </script>
-<!-- WhatsApp Chatbot Simple Icon -->
-<div class="whatsapp-simple">
-    <a href="https://wa.me/919553456247?text=Hi%20LGP%20Car%20Towing%20Service!%20I%20need%20emergency%20towing%20assistance%20in%20Pata%20Singaram." target="_blank" rel="noopener">
-        <img src="logos/whatsapp.png" alt="WhatsApp Chat" class="whatsapp-simple-icon">
+<!-- Call Icon Simple Button -->
+<div class="call-simple">
+    <a href="tel:+919553456247" rel="noopener">
+        <img src="logos/phone-icon.svg" alt="Call Us" class="call-simple-icon">
     </a>
 </div>
 
 <style>
-/* Simple WhatsApp Chatbot */
-.whatsapp-simple {
+/* Simple Call Button */
+.call-simple {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
 }
 
-.whatsapp-simple a {
+.call-simple a {
     display: block;
     text-decoration: none;
+    background: #008080;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
 }
 
-.whatsapp-simple-icon {
-    width: 60px;
-    height: 60px;
+.call-simple a:hover {
+    background: #006666;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.call-simple-icon {
+    width: 30px;
+    height: 30px;
     object-fit: contain;
+    filter: brightness(0) invert(1);
 }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    .whatsapp-simple-icon {
-        width: 55px;
-        height: 55px;
+    .call-simple a {
+        padding: 12px;
+    }
+    .call-simple-icon {
+        width: 25px;
+        height: 25px;
     }
 }
 
 @media (max-width: 480px) {
-    .whatsapp-simple-icon {
-        width: 50px;
-        height: 50px;
+    .call-simple a {
+        padding: 10px;
+    }
+    .call-simple-icon {
+        width: 20px;
+        height: 20px;
     }
 }
 </style>
