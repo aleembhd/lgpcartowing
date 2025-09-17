@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Tow truck body -->
+  <rect x="12" y="108" width="72" height="36" fill="#FF6B35" rx="6"/>
+  <!-- Truck cab -->
+  <rect x="12" y="72" width="36" height="36" fill="#FF6B35" rx="6"/>
+  <!-- Tow arm -->
+  <rect x="84" y="84" width="48" height="12" fill="#333" transform="rotate(15 108 90)"/>
+  <!-- Hook -->
+  <circle cx="132" cy="72" r="6" fill="#333"/>
+  <!-- Car being towed -->
+  <rect x="120" y="108" width="48" height="24" fill="#008080" rx="6"/>
+  <!-- Wheels -->
+  <circle cx="36" cy="150" r="12" fill="#333"/>
+  <circle cx="60" cy="150" r="12" fill="#333"/>
+  <circle cx="144" cy="138" r="9" fill="#333"/>
+  <circle cx="156" cy="138" r="9" fill="#333"/>
+  <!-- Wheel centers -->
+  <circle cx="36" cy="150" r="6" fill="#666"/>
+  <circle cx="60" cy="150" r="6" fill="#666"/>
+  <circle cx="144" cy="138" r="4.5" fill="#666"/>
+  <circle cx="156" cy="138" r="4.5" fill="#666"/>
+</svg>
