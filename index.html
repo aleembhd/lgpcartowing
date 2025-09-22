@@ -4241,7 +4241,7 @@ flexibility(document.documentElement);
                                                     <div class="elementor-widget-container">
                                                         <nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
                                                             <ul id="menu-1-8c7e058" class="elementor-nav-menu">
-                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60"><a href="https://lgpcartowingservices.org/" aria-current="page" class="elementor-item elementor-item-active menu-link">Home</a></li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60"><a href="#" aria-current="page" class="elementor-item elementor-item-active menu-link">Home</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="#about" class="elementor-item elementor-item-anchor menu-link">About us</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63"><a href="#services" class="elementor-item elementor-item-anchor menu-link">Services</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62"><a href="#Contact%20Now" class="elementor-item elementor-item-anchor menu-link">Contact us</a></li>
@@ -4253,7 +4253,7 @@ flexibility(document.documentElement);
                                                         </div>
                                                         <nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
                                                             <ul id="menu-2-8c7e058" class="elementor-nav-menu">
-                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60"><a href="https://lgpcartowingservices.org/" aria-current="page" class="elementor-item elementor-item-active menu-link" tabindex="-1">Home</a></li>
+                                                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-14 current_page_item menu-item-60"><a href="#" aria-current="page" class="elementor-item elementor-item-active menu-link" tabindex="-1">Home</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="#about" class="elementor-item elementor-item-anchor menu-link" tabindex="-1">About us</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-63"><a href="#services" class="elementor-item elementor-item-anchor menu-link" tabindex="-1">Services</a></li>
                                                                 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62"><a href="#Contact%20Now" class="elementor-item elementor-item-anchor menu-link" tabindex="-1">Contact us</a></li>
@@ -6540,13 +6540,16 @@ flexibility(document.documentElement);
 </script>
 
 <script>
-// Ensure Home button always navigates to the correct URL
-function forceHomeNav(e) {
+// Ensure Home button stays on current page and scrolls to top
+function handleHomeNav(e) {
   e.preventDefault();
-  window.location.href = 'https://lgpcartowingservices.org/';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-document.querySelectorAll('.home-nav-link').forEach(function(el) {
-  el.addEventListener('click', forceHomeNav);
+// Add event listeners to home navigation links
+document.querySelectorAll('a[href="#"]').forEach(function(el) {
+  if (el.textContent.trim() === 'Home') {
+    el.addEventListener('click', handleHomeNav);
+  }
 });
 </script>
 </body>
